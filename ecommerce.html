@@ -1,0 +1,519 @@
+<html>
+    
+    <head>
+        <link rel="icon" href=favicon.ico>
+        <title>E-commerce</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
+        
+      <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+       
+        <style>
+            
+
+        
+            #nav{
+                color: white;
+                width: 100%;
+                height: 66px;
+                background-color: black;
+                z-index: 1;
+            }
+            
+            .login{
+                float:right;
+                margin-top: 3px;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+                font-family: sans-serif;
+                      
+            }
+            a:hover{
+               
+                background-color: white;
+            }
+            .fa{
+                padding-right: 10px;
+            }
+            .search-text{
+                margin-top: 12px;
+                width: 550px;
+                position: relative;
+                left:80px;
+                font-family: Helvitica;
+                border: 0px;
+            }
+      
+            .product{
+                display:inline-block;
+                float: left;
+                padding: 3px 6px;
+            }
+            #dropdowns{
+               
+                margin-left: 13px;
+                padding: 0px 22px;
+            }
+            .dash{
+                border-right:1px solid grey;
+                border-bottom: 1px solid grey;
+                padding: 10px;
+            }
+            
+             tr{
+                border:1px solid grey;
+                border-collapse: collapse;
+            }
+            
+            #clockdiv{
+                font-family: sans-serif;
+                color: #fff;
+                display: inline-block;
+                font-weight: 100;
+                text-align: center;
+                font-size: 20px;
+                background-color: #00BF96;
+                bortmlder-radius: 5px;
+                position: relative;
+                bottom: 15px;
+            }
+
+            #clockdiv > div{
+                padding: 5px;
+                border-radius: 3px;
+                background: #00BF96;
+                display: inline-block;
+
+            }
+
+            #clockdiv div > span{
+                padding: 15px;
+                border-radius: 3px;
+                background: #00816A;
+                display: inline-block;
+                
+            }
+
+            .smalltext{
+                padding-top: 5px;
+                font-size: 16px;
+            }
+            .price-tag{
+                position: relative;
+                top:2px;
+                left: 12px;
+                font-size: 20px;
+                
+               
+            }
+            .price-styling{
+                color: #388E3C;
+                font-weight: normal;
+                
+            }
+            .deals-para{
+                position: relative;
+                left: 109px;
+                bottom: 290px;
+            }
+            .product-black-text{
+              position:relative;
+                bottom:12px;
+                left:18px;
+            }
+            table,tr,td,th{
+                border:none;
+            }
+            
+            #top{
+                height: 22px;
+                background-color: black;
+            }
+             #my-chart-button{
+                
+                height: 40px;
+                width: 100px;
+                border-radius: 2px;
+                background-color: #2469D9;
+                text-align: center;
+                position: relative;
+                left:1150px;
+                bottom: 72px;
+                 
+            }
+            #my-chart-text{
+                margin-top: 10px;
+                cursor: pointer;
+                
+                
+            }
+            
+             #footer{
+                background-color: black;
+                height: 300px;
+                width:100%;
+               
+            }
+            table{
+                text-align: center;
+               
+                
+            }
+            .copyright{
+                color:white;
+                position: relative;
+                left: 43%;
+                font-weight: normal;
+                bottom:720px; 
+            }
+            
+            /* Paste this css to your style sheet file or under head tag */
+            /* This only works with JavaScript, 
+            if it's not present, don't show loader */
+            .no-js #loader { display: none;  }
+            .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+            .se-pre-con {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url(images/loader-128x/Preloader_3.gif) center no-repeat #fff;
+            }
+        
+                    
+            
+        </style>
+        
+        <script src="https://use.fontawesome.com/de21ddf0d4.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        
+    </head>
+    
+    <body>
+        <div id="top">
+            <a href="login.html" class="login fa fa-sign-in" aria-hidden="true"> Login</a>
+                <a href="" class="login fa fa-bell"></a>
+            <a href="sign-up.html" class="login" style="position:relative;bottom:3px;">Sign up</a>
+            <a href="" class="login fa fa-user" aria-hidden="true"> My Account</a>
+            <a href="" class="login fa fa-shopping-cart" aria-hidden="true"> My Chart</a>
+            <a href="about-us.html" class="login" aria-hidden="true" style="position:relative;bottom:3px"> About Us</a>
+        
+        </div>
+            <div class="se-pre-con"></div>
+        <div id="nav">
+            
+             <img src="logo.png" style="position:relative;left:12px;">
+
+             <input type="search" class="search-text" placeholder="Search Products" style="width:1020px;height:35px;position:relative;bottom:35px;border-bottom-left-radius:5px;border-top-left-radius:5px" >
+
+            <div id=my-chart-button>
+        
+            
+                <i class="fa fa-shopping-cart" aria-hidden="true" id="my-chart-text"> Chart</i>
+            
+            </div>
+            
+         <a href=""><img src="search-logo.png" style="position:relative;left:1100px;bottom:110px;"></a>
+            
+        </div>
+         
+        <div id="dropdowns">
+        
+            <a class="product" href="" style="padding:12px;">Quickly Go To &rarr; </a>
+            <a class="product dash" href="">Smart Buy</a>
+            <a class="product dash" href="">Mobiles</a>
+            <a class="product dash" href="">TV</a>
+            <a class="product dash" href="">Washing Machine</a>
+            <a class="product dash" href="">Cameras</a>
+            <a class="product dash" href="">Nutrition</a>
+            <a class="product dash" href="">Furniture</a>
+            <a class="product dash" href="">Refrigerators</a>
+            <a class="product dash" href="">Laptop</a>
+            <a class="product dash" href="">Bedsheets</a>
+            <a class="product dash" href="" style="border-right:none;">Sports</a>
+            
+        </div>
+        
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/ad1.png"  id="wows1_0"/></li>
+		<li><img src="data1/images/ad2.jpg"  id="wows1_1"/></li>
+		<li><img src="data1/images/ad3.jpg"  id="wows1_2"/></li>
+		<li><img src="data1/images/ad4.jpg"  id="wows1_3"/></li>
+		<li><img src="data1/images/ad5.jpg"  id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" ><span><img src="data1/tooltips/ad1.png" ></span></a>
+		<a href="#" ><span><img src="data1/tooltips/ad2.jpg" ></span></a>
+		<a href="#" ><span><img src="data1/tooltips/ad3.jpg" ></span></a>
+		<a href="#" ><span><img src="data1/tooltips/ad4.jpg" ></span></a>
+		<a href="#" ><span><img src="data1/tooltips/ad5.jpg" > </span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"></div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+        
+         <table style="width:100%;">
+        
+            <tr>
+                <th>
+                    
+                    <div id="clockdiv" style="margin-left:28px;">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                        
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                        
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                              
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                              
+                          </div>
+                    </div>
+                </th>
+                
+                
+                <th><a href="product-decription.html"><img src="product/t-shirt.jpg" height="230px;"></a>
+                    <table style="width:100%;">
+                          <th class="price-tag" style="font-weight:normal;border:none"><span class="price-styling">Kids Teen &#38; Tops</span><br><hr><span class="product-black-text">upto 50% OFF</span></th>
+                    
+                    </table>
+                </th>
+                <th><a href=""><img src="product/kettle.png" height="230px;" style="position:relative;left:20px;"></a>
+                    <table style="width:100%;">
+                        <th class="price-tag" style="font-weight:normal;"><span class="price-styling" style="padding-left:27px;">Morphy Richards</span><br><hr><span class="product-black-text" style="padding-left:12px;">Starting at &#8377; 549 </span></th>
+                    
+                    </table></th>
+                <th><a href=""><img src="product/purse.jpg" height="230px;"></a>
+                    <table style="width:100%;">
+                       <th class="price-tag" style="font-weight:normal;"><span class="price-styling" style="padding-left:90px;">Gucci</span><br><hr><span class="product-black-text" style="padding-left:28px;">&#8377; 1000 <del>&#8377; 2500</del></span></th>
+                    
+                    </table></th>
+                <th><a href=""><img src="product/chords.png" height="230px;"></a>
+                    <table style="width:100%;">
+                        <th class="price-tag"><span class="price-styling" style="padding-left:28px;">Under &#8377; 599</span><br><hr><span style="font-weight:normal"><span class="product-black-text" style="padding-left:12px;">Min 50% off</span></span></th>
+                    
+                    </table>
+                </th>
+    
+            </tr>
+
+            
+        </table>
+        
+       
+        <span class="deals-para"><h2><em style="color:red;">Hot</em>Deals&nbsp;<i class="fa fa-clock-o fa-1x" aria-hidden="true" style="color:black"></i></h2></span>
+        <span style="position:relative;bottom:130px;"><h2>Great <em style="color:#0D283A">Savings</em> EveryDay</h2></span>
+        
+        <hr style="position:relative;bottom:80px;">
+        
+        <div style="position:relative;bottom:80px">
+        
+            <a href=""><img src="img_3.png" style="padding:30px;border-right:1px solid #E6E6E6"></a>
+            <a href=""><img src="img_4.png" style="padding-left:30px"></a>
+            
+        </div>
+        
+        <div style="position:relative;bottom:80px">
+        
+            <a href=""><img src="img_2.png" style="padding:30px;border-right:1px solid #E6E6E6"></a>
+            <a href=""><img src="img_1.png" style="padding-left:30px"></a>
+            
+        </div>
+        
+        <div style="position:relative;bottom:80px">
+        
+            <a href=""><img src="img_5.png" style="padding:30px;border-right:1px solid #E6E6E6"></a>
+            <a href=""><img src="img_6.png" style="padding-left:30px"></a>
+            
+        </div>
+        
+        
+        <div style="position:relative;bottom:820px;">
+            
+        <table style="float:right;background-color:#F9F9F9;">
+            
+            <tr>
+                <th><a href =""><img src="left-bar/img-1.png"></a><hr></th>
+            </tr>
+            <tr>
+                <td><a href=""><img src="left-bar/img-3.png"></a></td>
+            </tr>
+            
+          
+        </table>
+            
+        </div>
+        
+        <!--
+        
+            <div class="modal hide fade" id="myModal">
+                  <div class="modal-header">
+                    <a class="close" data-dismiss="modal">×</a>
+                    <h3>Modal header</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body…</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Save changes</a>
+                  </div>
+        
+            </div>
+        
+        -->
+        
+        <hr style="position:relative;bottom:79px;width:930px;">
+        
+         
+         <div id="footer">
+        
+           <table style="width:100%;color:white;position:Relative;bottom:730px;">
+              <tr>
+                <th style="padding:20px 10px 20px 8px;">Mails Us:</th>
+                <td>Registered Office Address:<hr style="background-color:white"></td>
+              </tr>
+              <tr>
+                <th rowspan="2" style="padding-left:8px;"><span style="font-weight:normal;">Flipkart Internet Private Limited,<br>
+                    Ozone Manay Tech Park,<br>
+                    #56/18 &#38; 55/09, 7th Floor,<br>
+                    Garvebhavipalya, Hosur Road,<br>
+                    Bangalore - 560068,<br> 
+                    Karnataka, India.</span></th>
+                <td>Flipkart Internet Private Limited,<br>
+                    Vaishnavi Summit, Ground Floor,<br> 7th Main,
+                    80 Feet Road,<br> 3rd Block,
+                    Koramangala,<br>
+                    Bengaluru - 560034<br>
+                    India<br>
+                    CIN : U51109KA2012PTC066107<br>
+                    Telephone: 1800 208 9898<br>
+                    Email : cs@flipkart.com</td>
+              </tr>
+              
+            </table>
+            
+            <span class="copyright">&#9400;<em>Lpu.com</em> 2005-2019</span>
+             
+            </div>
+               
+                
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!--These two scrips are for the pop-up colorbox from Jquery that appears after 5 seconds --> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+        
+        <script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+                <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+        </script>
+        
+        <script>
+        
+             function getTimeRemaining(endtime) {
+                      var t = Date.parse(endtime) - Date.parse(new Date());
+                      var seconds = Math.floor((t / 1000) % 60);
+                      var minutes = Math.floor((t / 1000 / 60) % 60);
+                      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+              return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+              };
+            }
+
+            function initializeClock(id, endtime) {
+              var clock = document.getElementById(id);
+              var daysSpan = clock.querySelector('.days');
+              var hoursSpan = clock.querySelector('.hours');
+              var minutesSpan = clock.querySelector('.minutes');
+              var secondsSpan = clock.querySelector('.seconds');
+
+              function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                  clearInterval(timeinterval);
+                }
+              }
+
+              updateClock();
+              var timeinterval = setInterval(updateClock, 1000);
+            }
+
+            var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+            initializeClock('clockdiv', deadline);
+            
+            
+            //paste this code under the head tag or in a separate js file.
+                // Wait for window load
+                $(window).load(function() {
+                    // Animate loader off screen
+                    $(".se-pre-con").fadeOut("slow");;
+                });
+        
+            /*
+          
+            $(window).load(function(){
+                $('#myModal').modal('show');
+            });
+           
+              function openColorBox(){
+                $.colorbox({
+                    iframe:true, 
+                    width:"80%",
+                    height:"80%", 
+                    href: "color-box.html" 
+                    
+                        
+                });
+                  
+              }
+              setTimeout(openColorBox, 2000);
+        
+            
+               */ 
+
+            
+        </script>
+  
+        
+        <div>Hey there </div>
+        
+        
+        
+    </body>
+    
+    </html>

@@ -1,0 +1,44 @@
+<html>
+    
+    <head>
+    
+    </head>
+    
+    <body>
+        <img src="http://cdn2.hubspot.net/hubfs/53/Ecommerce/ecommerce-promotions-fail.jpg">
+        <div style="position:relative;left:20px;">
+        <form>
+           
+            <em>Please enter your mail Id: </em><input type="email" id="mail"><br><br>
+            
+             <input type="checkbox">I want to recieve the Promotional Offers<br><br>
+            
+            
+            <input type="submit" style="background-color:#2874F0;height:30px;width:60px;color:white" onclick="Javascript:checkEmail();" id="submit">
+        </form>
+        </div>
+        <h2 style="position:relative;left:660px;bottom:380px"><pre>
+        Here we present 
+        the greatest 
+        discount of the
+        <em>year</em> </pre></h2>
+     <script language="javascript">
+
+        function checkEmail() {
+
+            var email = document.getElementById('txtEmail');
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            if (!filter.test(email.value)) {
+            alert('Please provide a valid email address');
+            email.focus;
+            return false;
+ };
+            
+            }
+        
+         
+        </script>
+    </body>
+
+</html>

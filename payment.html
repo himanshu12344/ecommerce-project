@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.paybtn {
+    color: white;
+    padding: 12px 20px;
+    background-color: #2eb82e;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+}
+input {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.input1 {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.input2 {
+    width: 100px;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+table, th,td
+{ border: 1px solid black;
+  border-collapse:collapse;
+  border-color:#000033;
+}
+td
+{ text-align:center;
+}
+th, td
+{font-family:Arial;
+ color:#ffffff; 
+ padding: 10px;
+}
+table
+{ 
+ margin: 10px;
+}
+</style>
+</head>
+<body>
+<form action="rio.html">
+<table style="width:50%" align="center">
+<tr>
+<th colspan="2" align="left" style="background-color:#8080ff;">&nbsp;Payment Details  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="payment.jpg" align="right"></th>
+
+</tr>
+
+<tr>
+<th align="left" colspan="2" style="background-color:#000033;"><br>&nbsp;Card Number<br><input type="text" placeholder=" XXXX - XXXX - XXXX - XXXX"></th>
+</tr>
+ <tr> 
+ <th style="background-color:#000033;" align="left"><br>&nbsp;EXPIRATION DATE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<select class="input2">
+<option><b>Month</b></option>
+<option><b>January</b></option>
+<option><b>February</b></option>
+<option><b>March</b></option>
+<option><b>April</b></option>
+<option><b>May</b></option>
+<option><b>June</b></option>
+<option><b>July</b></option>
+<option><b>August</b></option>
+<option><b>September</b></option>
+<option><b>October</b></option>
+<option><b>November</b></option>
+<option><b>December</b></option>
+</select>&nbsp;&nbsp;&nbsp;
+<select class="input2">
+<option><b>Year</b></option>
+<option><b>2017</b></option>
+<option><b>2018</b></option>
+<option><b>2019</b></option>
+<option><b>2020</b></option>
+<option><b>2021</b></option><option><b>Year</b></option>
+<option><b>2022</b></option>
+<option><b>2023</b></option>
+<option><b>2024</b></option>
+<option><b>2025</b></option>
+<option><b>2026</b></option>
+<option><b>2027</b></option>
+<option><b>2028</b></option>
+<option><b>2029</b></option>
+<option><b>2030</b></option>
+<option><b>2031</b></option>
+<option><b>2032</b></option>
+<option><b>2033</b></option>
+</select>
+</th>
+<th style="background-color:#000033;" align="left"><br>&nbsp;CVV CODE &nbsp;<br><input type="password" class="input1" placeholder="CVV"></th> 
+</tr>
+<tr>
+<th style="background-color:#000033;" align="left" colspan="2"><br>&nbsp;COUPON CODE<br>&nbsp;<input type="text" placeholder="COUPON CODE"></th>
+</tr>
+<tr>
+<th style="background-color:#000033;" colspan="2"><button type="submit" class="paybtn" onclick="alert('PAYMENT SUCCESSFULLY DONE!! Redirecting to Home')">PAY</button></th>
+</tr>
+</table>
+</form>
+</body>
+</html>
